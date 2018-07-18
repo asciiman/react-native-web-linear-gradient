@@ -1,20 +1,8 @@
-# react-native-web-linear-gradient
-> React Native for Web implementation of react-native-linear-gradient
+# react-primitives-linear-gradient
+> react-primitives implementation of react-native-linear-gradient
 
 ## Getting started
-`$ npm install react-native-web-linear-gradient --save`
-
-Alias the package in your webpack config:
-
-```
-resolve: {
-    alias: {
-        'react-native': 'react-native-web',
-        ...
-        'react-native-linear-gradient': 'react-native-web-linear-gradient',
-    }
-}
-```
+`$ npm install react-primitives-linear-gradient --save`
 
 ## Usage
 See [react-native-linear-gradient](https://github.com/react-native-community/react-native-linear-gradient).

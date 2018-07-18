@@ -1,21 +1,22 @@
 {
-  "name": "react-native-web-linear-gradient",
-  "version": "1.0.2",
-  "description": "React Native for Web implementation of react-native-linear-gradient",
+  "name": "react-primitives-linear-gradient",
+  "version": "1.0.0",
+  "description": "react-primitives implementation of react-native-linear-gradient",
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:react-native-web-community/react-native-web-linear-gradient.git"
+    "url": "git@github.com:asciiman/react-primitives-linear-gradient.git"
   },
   "author": {
-    "name": "Louis Lagrange",
-    "email": "lagrange.louis@gmail.com",
-    "url": "https://github.com/Minishlink"
+    "name": "Stephen Horvath",
+    "email": "github@stephenhorvath.com",
+    "url": "https://github.com/asciiman"
   },
   "license": "MIT",
   "keywords": [
     "react-native",
     "react-native-web",
+    "react-primitives",
     "react-native-linear-gradient",
     "linear-gradient"
   ],
@@ -34,10 +35,9 @@
     "prettier": "^1.7.3",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "react-native-web": "^0.1.1",
-    "webpack": "^3.6.0"
+    "react-primitives": "^0.6.0"
   },
   "peerDependencies": {
-    "react-native-web": "*"
+    "react-primitives": "*"
   }
 }

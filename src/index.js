@@ -1,20 +1,8 @@
 import React, { PureComponent } from 'react';
-import { View } from 'react-native';
+import { View } from 'react-primitives';
+import PropTypes from 'prop-types';
 
-export default class LinearGradient extends PureComponent {
-  static defaultProps = {
-    start: {
-      x: 0.5,
-      y: 0,
-    },
-    end: {
-      x: 0.5,
-      y: 1,
-    },
-    locations: [],
-    colors: [],
-  };
-
+class LinearGradient extends PureComponent {
   state = {
     width: 1,
     height: 1,
@@ -63,3 +51,24 @@ export default class LinearGradient extends PureComponent {
     );
   }
 }
+
+LinearGradient.defaultProps = {
+  start: {
+    x: 0.5,
+    y: 0,
+  },
+  end: {
+    x: 0.5,
+    y: 1,
+  },
+  locations: [],
+  colors: [],
+}
+LinearGradient.propTypes = {
+  start:     PropTypes.object,
+  end:       PropTypes.object,
+  locations: PropTypes.array,
+  colors:    PropTypes.array,
+}
+
+export default LinearGradient
