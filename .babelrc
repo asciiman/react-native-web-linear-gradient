@@ -1,0 +1,19 @@
+{
+  presets: [
+    "env",
+    "stage-0",
+    "react"
+  ],
+  plugins: [
+    "transform-object-rest-spread",
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "react-primitives-linear-gradient": "./"
+        },
+        "cwd": "babelrc"
+      }
+    ]
+  ]
+}

@@ -3,18 +3,22 @@ import { View } from 'react-primitives';
 import PropTypes from 'prop-types';
 
 class LinearGradient extends PureComponent {
-  state = {
-    width: 1,
-    height: 1,
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      width: 1,
+      height: 1,
+    };
+  }
 
-  measure = ({ nativeEvent }) =>
+  measure({ nativeEvent }) {
     this.setState({
       width: nativeEvent.layout.width,
       height: nativeEvent.layout.height,
     });
+  }
 
-  getAngle = () => {
+  getAngle() {
     // Math.atan2 handles Infinity
     const angle =
       Math.atan2(
@@ -23,9 +27,9 @@ class LinearGradient extends PureComponent {
       ) +
       Math.PI / 2;
     return angle + 'rad';
-  };
+  }
 
-  getColors = () =>
+  getColors() {
     this.props.colors
       .map((color, index) => {
         const location = this.props.locations[index];
@@ -36,6 +40,7 @@ class LinearGradient extends PureComponent {
         return color + locationStyle;
       })
       .join(',');
+  }
 
   render() {
     return (
