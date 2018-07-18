@@ -1,6 +1,6 @@
 {
   "name": "react-primitives-linear-gradient",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "react-primitives implementation of react-native-linear-gradient",
   "main": "src/index.js",
   "repository": {
@@ -35,7 +35,8 @@
     "prettier": "^1.7.3",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "react-primitives": "^0.6.0"
+    "react-primitives": "^0.6.0",
+    "webpack": "^3.6.0"
   },
   "peerDependencies": {
     "react-primitives": "*"
