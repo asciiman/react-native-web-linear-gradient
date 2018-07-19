@@ -1,6 +1,6 @@
 {
   "name": "react-primitives-linear-gradient",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "react-primitives implementation of react-native-linear-gradient",
   "main": "lib/index.js",
   "repository": {
@@ -23,7 +23,7 @@
   "scripts": {
     "build": "babel src -d lib",
     "clean": "rm -rf lib",
-    "prepublish": "npm run clean && npm run build",
+    "prepare": "npm run clean && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
