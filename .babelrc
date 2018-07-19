@@ -1,17 +1,8 @@
 {
   "presets": [
-    "es2015",
     "react"
   ],
   "plugins": [
-    "transform-react-constant-elements",
-    "transform-react-inline-elements"
-  ],
-  "env": {
-    "start": {
-      "presets": [
-        "react-hmre"
-      ]
-    }
-  }
+    "transform-class-properties"
+  ]
 }

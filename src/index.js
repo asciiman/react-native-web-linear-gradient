@@ -11,14 +11,13 @@ class LinearGradient extends PureComponent {
     };
   }
 
-  measure({ nativeEvent }) {
+  measure = ({ nativeEvent }) =>
     this.setState({
       width: nativeEvent.layout.width,
       height: nativeEvent.layout.height,
     });
-  }
 
-  getAngle() {
+  getAngle = () => {
     // Math.atan2 handles Infinity
     const angle =
       Math.atan2(
@@ -27,9 +26,9 @@ class LinearGradient extends PureComponent {
       ) +
       Math.PI / 2;
     return angle + 'rad';
-  }
+  };
 
-  getColors() {
+  getColors = () =>
     this.props.colors
       .map((color, index) => {
         const location = this.props.locations[index];
@@ -40,7 +39,6 @@ class LinearGradient extends PureComponent {
         return color + locationStyle;
       })
       .join(',');
-  }
 
   render() {
     return (
