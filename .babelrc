@@ -1,19 +1,17 @@
 {
-  presets: [
-    "env",
-    "stage-0",
+  "presets": [
+    "es2015",
     "react"
   ],
-  plugins: [
-    "transform-object-rest-spread",
-    [
-      "module-resolver",
-      {
-        "alias": {
-          "react-primitives-linear-gradient": "./"
-        },
-        "cwd": "babelrc"
-      }
-    ]
-  ]
+  "plugins": [
+    "transform-react-constant-elements",
+    "transform-react-inline-elements"
+  ],
+  "env": {
+    "start": {
+      "presets": [
+        "react-hmre"
+      ]
+    }
+  }
 }

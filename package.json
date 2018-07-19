@@ -1,6 +1,6 @@
 {
   "name": "react-primitives-linear-gradient",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "react-primitives implementation of react-native-linear-gradient",
   "main": "src/index.js",
   "repository": {
@@ -21,6 +21,7 @@
     "linear-gradient"
   ],
   "scripts": {
+    "build": "babel src -d lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
@@ -31,7 +32,13 @@
     "babel-plugin-module-resolver": "^3.1.1",
     "babel-plugin-syntax-object-rest-spread": "^6.5.0",
     "babel-plugin-transform-object-rest-spread": "^6.6.5",
-    "babel-preset-airbnb": "^2.4.0",
+    "babel-plugin-transform-react-constant-elements": "^6.23.0",
+    "babel-plugin-transform-react-inline-elements": "^6.22.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react-app": "^3.0.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-runtime": "^6.23.0",
     "prettier": "^1.7.3",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
